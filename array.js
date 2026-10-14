@@ -11,7 +11,7 @@ const orders = [
   },
 ];
 console.log(orders.map(order=>order.customer));
-console.log(orders.filter(order=>order.status==="paid"));
+console.log(orders.filter(order=>order.status==="paid").map(order=>order.customer));
 console.log(orders.filter(order=>order.status==="pending"));
 console.log(orders.find(order=>order.id===3));
 console.log(orders.reduce((acc,order)=>acc+order.total,0));
